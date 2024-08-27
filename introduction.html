@@ -23,9 +23,9 @@
     </style>
   </head>
 
-  <body class="bg-gray-100 text-gray-900">
+  <body class="bg-gray-900 text-gray-300">
     <!-- Navbar -->
-    <nav class="bg-gray-800 text-white p-8">
+    <nav class="bg-gray-900 text-white p-8">
       <div class="container mx-auto flex items-center justify-between">
         <div class="flex items-baseline">
           <!-- Menu Icon -->
@@ -50,49 +50,37 @@
       <!-- Sidebar -->
       <aside
         id="sidebar"
-        class="w-64 bg-white shadow-md h-screen sticky top-0 p-4 sidebar-visible"
+        class="w-64 bg-gray-900 shadow-md h-screen sticky top-0 p-4 sidebar-visible text-gray-300"
       >
         <h2 class="text-lg font-semibold mb-4">Algorithm</h2>
         <ul>
           <li>
-            <a
-              href="#"
-              class="block py-2 px-3 text-gray-700 hover:bg-gray-200 rounded"
+            <a href="#" class="block py-2 px-3 hover:bg-gray-700 rounded"
               >Pretest</a
             >
           </li>
           <li>
-            <a
-              href="#"
-              class="block py-2 px-3 text-gray-700 hover:bg-gray-200 rounded"
+            <a href="#" class="block py-2 px-3 hover:bg-gray-700 rounded"
               >Introduction</a
             >
           </li>
           <li>
-            <a
-              href="#"
-              class="block py-2 px-3 text-gray-700 hover:bg-gray-200 rounded"
+            <a href="#" class="block py-2 px-3 hover:bg-gray-700 rounded"
               >Analysis</a
             >
           </li>
           <li>
-            <a
-              href="#"
-              class="block py-2 px-3 text-gray-700 hover:bg-gray-200 rounded"
+            <a href="#" class="block py-2 px-3 hover:bg-gray-700 rounded"
               >Quiz</a
             >
           </li>
           <li>
-            <a
-              href="#"
-              class="block py-2 px-3 text-gray-700 hover:bg-gray-200 rounded"
+            <a href="#" class="block py-2 px-3 hover:bg-gray-700 rounded"
               >Simulation</a
             >
           </li>
           <li>
-            <a
-              href="#"
-              class="block py-2 px-3 text-gray-700 hover:bg-gray-200 rounded"
+            <a href="#" class="block py-2 px-3 hover:bg-gray-700 rounded"
               >Posttest</a
             >
           </li>
@@ -100,20 +88,22 @@
       </aside>
 
       <!-- Main Content -->
-      <main class="flex-1 p-6">
+      <main class="flex-1 p-6 text-gray-300">
         <h1 class="text-2xl font-bold mb-4">Introduction to Merge Sort</h1>
-        <p class="text-gray-700 mb-4">
+        <p class="mb-4">
           To understand Merge Sort we will take the following example into
-          consideration 
-          :</p> <p> Imagine you have a big pile of cards, and each card
-          has a number on it. Your goal is to arrange these cards from the
-          smallest number to the biggest. But instead of trying to sort the
-          whole pile at once, let's break it down into smaller, easier steps.
-          This is what merge sort does!
+          consideration:
+        </p>
+        <p class="mb-4">
+          Imagine you have a big pile of cards, and each card has a number on
+          it. Your goal is to arrange these cards from the smallest number to
+          the biggest. But instead of trying to sort the whole pile at once,
+          let's break it down into smaller, easier steps. This is what merge
+          sort does!
         </p>
 
         <h2 class="text-xl font-semibold mt-6 mb-2">Step 1: Break it Down</h2>
-        <p class="text-gray-700 mb-4">
+        <p class="mb-4">
           First, we split the big pile of cards into two smaller piles. Then, we
           keep splitting those piles until each pile has just one card. It's
           like tearing a big puzzle into tiny pieces.
@@ -122,7 +112,7 @@
         <h2 class="text-xl font-semibold mt-6 mb-2">
           Step 2: Sort the Small Pieces
         </h2>
-        <p class="text-gray-700 mb-4">
+        <p class="mb-4">
           Now that we have lots of tiny piles (each with just one card), we
           start putting them back together, but in the right order. We look at
           two small piles at a time, compare the cards, and put them in order,
@@ -130,7 +120,7 @@
         </p>
 
         <h2 class="text-xl font-semibold mt-6 mb-2">Step 3: Merge the Piles</h2>
-        <p class="text-gray-700 mb-4">
+        <p class="mb-4">
           As we keep merging, the piles get bigger. We always compare the top
           card from each pile, pick the smaller one, and add it to the new pile.
           We keep doing this until all the cards are in one big pile again, but
@@ -138,7 +128,7 @@
         </p>
 
         <h2 class="text-xl font-semibold mt-6 mb-2">An Example:</h2>
-        <p class="text-gray-700">
+        <p class="mb-4">
           Let's say you have 8 cards with the numbers 5, 3, 8, 6, 2, 7, 1, and
           4.
         </p>
@@ -157,9 +147,7 @@
           </li>
         </ul>
 
-        <p class="text-gray-700 mb-4">
-          Now, we start <strong>merging</strong>:
-        </p>
+        <p class="mb-4">Now, we start <strong>merging</strong>:</p>
         <ul class="list-disc list-inside mb-4">
           <li>
             <strong>Merge Small Piles:</strong> Compare and merge:
@@ -184,7 +172,7 @@
           </li>
         </ul>
 
-        <p class="text-gray-700">
+        <p>
           And there you have it! Merge sort works by breaking things down into
           tiny pieces, then carefully putting them back together in the right
           order. Just like putting a puzzle back together after mixing it up!
