@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Static Sidebar with Navbar</title>
+  <!-- Tailwind CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    /* Custom style to transition the sidebar */
+    .sidebar-hidden {
+      transform: translateX(-100%);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .sidebar-visible {
+      transform: translateX(0);
+      transition: transform 0.3s ease-in-out;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-900 text-gray-100"> <!-- Changed bg-gray-100 to bg-gray-900 and text color to gray-100 -->
+  <!-- Navbar -->
+  <nav class="bg-gray-800 text-white p-8">
+    <div class="container mx-auto flex items-center justify-between">
+      <div class="flex items-baseline">
+        <!-- Menu Icon -->
+        <button id="menu-btn" class="text-white text-2xl mr-4 focus:outline-none">☰</button>
+        <a href="#" class="text-xl font-bold text-white">Djikstra Algorithm</a>
+      </div>
+      <div class="flex items-center space-x-16">
+        <a href="#" class="text-gray-300 hover:text-blue-400">Home</a>
+        <a href="#" class="text-gray-300 hover:text-blue-400">Collaborator</a>
+        <a href="#" class="text-gray-300 hover:text-blue-400">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content Wrapper -->
+  <div class="flex">
+    <!-- Sidebar -->
+    <aside id="sidebar" class="w-64 bg-gray-900 shadow-md h-screen sticky top-0 p-4 sidebar-visible"> <!-- Changed bg-white to bg-gray-900 -->
+      <h2 class="text-lg font-semibold mb-4 text-white">Algorithm</h2> <!-- Changed text color to white -->
+      <ul>
+        <li><a href="#" class="block py-2 px-3 text-gray-300 hover:bg-gray-700 rounded">Pretest</a></li> <!-- Changed text-gray-700 to text-gray-300 -->
+        <li><a href="#" class="block py-2 px-3 text-gray-300 hover:bg-gray-700 rounded">Introduction</a></li>
+        <li><a href="#" class="block py-2 px-3 text-gray-300 hover:bg-gray-700 rounded">Analysis</a></li>
+        <li><a href="#" class="block py-2 px-3 text-gray-300 hover:bg-gray-700 rounded">Quiz</a></li>
+        <li><a href="#" class="block py-2 px-3 text-gray-300 hover:bg-gray-700 rounded">Simulation</a></li>
+        <li><a href="#" class="block py-2 px-3 text-gray-300 hover:bg-gray-700 rounded">Posttest</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-6 bg-gray-900"> <!-- Added bg-gray-900 to main content -->
+      <h1 class="text-2xl font-bold mb-4 text-white">Welcome to the Algorithm Page</h1> <!-- Changed text color to white -->
+      <p class="text-gray-300">This is a sample page with a static sidebar and a navbar using Tailwind CSS.</p> <!-- Changed text color to gray-300 -->
+    </main>
+  </div>
+
+</body>
+
+</html>
